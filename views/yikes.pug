@@ -1,0 +1,16 @@
+extends layout
+block content
+    include headerAltThankYou
+    main.menu
+        section.container-fluid.menuCaseWrapper
+            article.row.menuCase
+                div.thanksYikes.col-sm-6.menuTitle
+                    h2 &nbsp;<br>
+                    h1 Yikes!
+                    p Something went wrong.  We were not able to receive your comment.  Usually this is due to a high number of comments being left at once, 
+                        i or 
+                        | there may be a technical interruption.
+                    p Please wait a few moments, refresh the browser and try again.
+                    button.btn.btn-primary.w100(onclick='location.href="/menu";' value="Go to The Menu") Menu
+    include social
+    include footer

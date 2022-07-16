@@ -1,0 +1,31 @@
+extends layout
+block content
+    include headerAlt 
+    main#entrees.menu.dinnerMain
+        section.container-fluid.menuCaseWrapper
+            article.row.menuCase
+                div.col-sm-8.menuTitle
+                    include dinnerMenu
+                div#appetizers.col-sm-8
+                    include appetizers
+                div#beer.col-sm-8
+                    include beer
+                div#wine.col-sm-8
+                    include whiteWine
+                div.col-sm-8
+                    include redWine
+                div#desserts.col-sm-8
+                    include desserts
+                    div.shareMenuCase.w100.rightTextAlign
+                        a.shareMenu Share
+                        include share
+    main.later
+        section.container-fluid.menuCaseWrapper 
+            article.row.menuCase
+                div.col-sm-6
+                    include lunchMenu
+                div.col-sm-6
+                    include breakfastMenu
+    include social
+    include thankYou
+    include footer

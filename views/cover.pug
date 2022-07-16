@@ -1,0 +1,34 @@
+main#duJour
+  section(style='background-image: url(https://images.unsplash.com/photo-1631303494240-7c3bc6bd8c03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);').container-fluid
+    article.row
+      div#item.item.coverStory.col-sm-6
+        small
+          h6 Posted:
+          h2=articleDate
+        h1=articleTitle
+        h5 by #{title}
+        p #{articleClip}
+        h2 Topic:
+          each categ in articleCategory
+            i  #{categ},         
+        a(href=articleLink) 
+          h6#more.more Continue reading →
+        div.sharesCase
+          h5 Share:
+          include share
+      div.col-sm-6.laurelCase
+        div.laurel
+          img.laurelL(src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/DNCfUgbMKavIJUlEyqdhNsjK')
+          img.laurelR(src='https://matrix-client.matrix.org/_matrix/media/r0/download/matrix.org/SuRxDThNNpovsxdxVitviSho')
+          div.superCenterer
+            h1.laurelH1 du jour &shy;
+              span.diminutive 
+                iadjective 
+            h3 \ dü-ˈzhər  , də-, -ˈzhu̇r, -ˈzhür \
+            h3.split 
+              b 1&nbsp;:
+              a.padLS &nbsp;What's fresh today at 
+                i.--f4.textSize24 Le
+                span.textLogofy.textSize24 Bistro
+                i.--f5 <br>Only at 
+                | Waterbury Hill!

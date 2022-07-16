@@ -1,0 +1,20 @@
+nav#navigatorAlt.navigatorAlt
+    ul
+      li
+        a(href='/menus/breakfast') Breakfast
+      li 
+        a(href='/menus/lunch') Lunch
+      li.flyOutCase
+        a#flyPop.flyPop Dinner
+        ul#flyOut.flyOut.hide
+          li 
+            a(href='/menus/dinner#entrees') Entrées
+          li 
+            a(href='/menus/dinner#appetizers') Appetizers
+          li 
+            a(href='/menus/dinner#beer') Beer
+          li 
+            a(href='/menus/dinner#wine') Wine
+          li
+            a(href='/menus/dinner#desserts') Dessert
+script(src="/javascripts/flyPop.js")

@@ -1,0 +1,14 @@
+form#emailer.emailer(method='POST' action='send' enctype ='multipart/form-data')
+    label(for="name") Name:
+    input#name.name(type='text', placeholder='Name' name='name' value="" required='true')
+    p
+    label(for="address") Email address:
+    input#address.address(type='text', placeholder='name@address.com' name='address' value="" required='true')
+    p
+    label(for="subject") Subject:
+    input#subject.subject(type='text', placeholder='Re:' name='subject' value="" required='true')
+    p
+    label(for="message") Comment:
+    textarea#message.message(type='text', placeholder='...' name='message' value="" required='true')
+    p
+    button.btn.btn-primary(type='submit' value='submit') Send my comment

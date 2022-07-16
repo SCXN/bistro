@@ -1,0 +1,13 @@
+extends layout
+block content
+    include headerAltThankYou
+    main.thanksYikes
+        section.container-fluid.menuCaseWrapper
+            article.row.menuCase
+                div.thanksYikes.col-sm-8.menuTitle
+                    h2 &nbsp;<br>
+                    h1.centerTextAlign Thank you!
+                    p.mt-3 Your comment has been forwarded to our guest satisfaction specialists for processing.  Please allow for up to 72 hrs for a response if one has been requested.  Continued thanks.
+                    button.btn.btn-primary.w100(onclick='location.href="/menus";' value="Go to The Menu") Menu
+    include social
+    include footer
